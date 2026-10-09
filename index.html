@@ -1,262 +1,176 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>James Bhai™ (Cricket Analyst)✌️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b10">
+<title>Cricket Zone | Telegram</title>
 
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '8326654699545');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=8326654699545&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+<!-- Meta Pixel: PageView Only -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
+fbq('init', '8533796321583');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=8533796321583&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel -->
 
-        /* Non-scrollable Full Screen Setup */
-        html, body {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background: linear-gradient(135deg, #0a192f, #112240, #020c1b);
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        /* Glassmorphism Card Container */
-        .card-container {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 20px;
-            padding: 24px 20px;
-            width: 90%;
-            max-width: 380px;
-            max-height: 92vh;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1;
-        }
-
-        /* Pulse Badge */
-        .badge {
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
-            color: #ffffff;
-            padding: 5px 14px;
-            border-radius: 50px;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-            box-shadow: 0 0 15px rgba(255, 75, 43, 0.5);
-            animation: pulse-badge 1.6s infinite;
-        }
-
-        @keyframes pulse-badge {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 75, 43, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 75, 43, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 75, 43, 0); }
-        }
-
-        /* Profile Image Container */
-        .profile-box {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            border: 3px solid #0088cc;
-            margin-bottom: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 136, 204, 0.5);
-            background: #102a45;
-            flex-shrink: 0;
-        }
-
-        .profile-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Channel Name Styling */
-        .channel-name {
-            font-size: 21px;
-            font-weight: 800;
-            margin-bottom: 4px;
-            color: #00a8ff;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-        }
-
-        p.subtitle {
-            font-size: 12px;
-            color: #8892b0;
-            margin-bottom: 14px;
-            line-height: 1.4;
-        }
-
-        /* Highlight List */
-        .features {
-            text-align: left;
-            width: 100%;
-            margin-bottom: 16px;
-            background: rgba(0, 0, 0, 0.25);
-            padding: 12px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .features li {
-            list-style: none;
-            margin-bottom: 8px;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            color: #e6f1ff;
-            font-weight: 500;
-        }
-
-        .features li:last-child {
-            margin-bottom: 0;
-        }
-
-        .features li span {
-            color: #64ffda;
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        /* Telegram Main Blinking/Glowing Button */
-        .join-btn {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: linear-gradient(45deg, #0088cc, #00a8ff);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 16px;
-            font-size: 15px;
-            font-weight: 700;
-            border-radius: 50px;
-            letter-spacing: 0.5px;
-            animation: blink-glow 1.2s infinite alternate;
-            transition: all 0.3s ease;
-        }
-
-        @keyframes blink-glow {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 8px rgba(0, 136, 204, 0.5);
-                filter: brightness(1);
-            }
-            100% {
-                transform: scale(1.03);
-                box-shadow: 0 0 22px rgba(0, 168, 255, 0.9), 0 0 30px rgba(0, 136, 204, 0.7);
-                filter: brightness(1.25);
-            }
-        }
-
-        .join-btn:hover {
-            background: linear-gradient(45deg, #0077b5, #0099e6);
-        }
-
-        /* Bottom Corner Ad Contact Button */
-        .ad-contact-corner {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            background: rgba(15, 23, 42, 0.95);
-            border: 1px solid rgba(0, 136, 204, 0.6);
-            padding: 8px 14px;
-            border-radius: 50px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(8px);
-            z-index: 1000;
-        }
-
-        .ad-contact-corner a {
-            color: #00a8ff;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .ad-contact-corner a:hover {
-            color: #ffffff;
-        }
-    </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden}
+body{font-family:Arial,Helvetica,sans-serif;background:#080b10;color:#fff}
+.page{
+height:100vh;height:100dvh;width:100%;
+min-height:400px;overflow:hidden;
+display:flex;align-items:center;justify-content:center;
+padding:16px;position:relative;isolation:isolate;
+background:radial-gradient(ellipse at 50% 38%,#15392d,#0d201b 30%,transparent 70%),
+linear-gradient(145deg,#10151d,#06080c 75%);
+}
+.page:before{
+content:"";position:absolute;inset:0;z-index:-1;opacity:.13;
+background-image:linear-gradient(#ffffff12 1px,transparent 1px),
+linear-gradient(90deg,#ffffff12 1px,transparent 1px);
+background-size:32px 32px;
+}
+.glow{
+position:absolute;width:240px;height:240px;border-radius:50%;
+background:#20d58b;filter:blur(110px);opacity:.14;
+top:15%;left:50%;transform:translateX(-50%);z-index:-1;
+}
+.card{
+width:min(100%,390px);text-align:center;padding:25px 21px;
+border:1px solid #ffffff20;border-radius:25px;
+background:linear-gradient(155deg,#ffffff12,#ffffff05 55%,#0c221940);
+box-shadow:0 25px 80px #0006;backdrop-filter:blur(15px);
+}
+.top-label{
+display:inline-flex;align-items:center;gap:7px;padding:7px 12px;
+border:1px solid #f7c75b55;border-radius:50px;color:#f7c75b;
+font-size:10px;font-weight:800;letter-spacing:2px;
+}
+.dot{width:7px;height:7px;border-radius:50%;background:#36e69b;box-shadow:0 0 9px #36e69b}
+.emblem{
+width:108px;height:108px;margin:20px auto 17px;
+display:grid;place-items:center;border-radius:50%;
+border:1px solid #f7c75b99;
+background:radial-gradient(circle,#f7c75b25,#101c17 70%);
+box-shadow:0 0 32px #f7c75b14;
+}
+.emblem svg{width:76px;height:76px}
+h1{font-size:clamp(29px,8vw,38px);line-height:1.05;font-weight:900;letter-spacing:1px}
+h1 span{display:block;margin-top:5px;color:#f7c75b}
+.subtitle{
+margin:12px auto 20px;max-width:280px;color:#b5c1bd;
+font-size:13px;line-height:1.6;
+}
+.features{display:flex;justify-content:center;gap:7px;margin-bottom:22px}
+.feature{
+flex:1;padding:10px 3px;border-radius:10px;
+border:1px solid #ffffff12;background:#ffffff08;
+font-size:10px;color:#e4e9e6;
+}
+.feature b{display:block;margin-bottom:5px;color:#f7c75b;font-size:17px}
+.join-btn{
+display:flex;align-items:center;justify-content:center;gap:10px;
+width:100%;min-height:53px;padding:14px;border-radius:12px;
+text-decoration:none;color:#06120d;
+background:linear-gradient(100deg,#ffe39a,#f7c75b 52%,#eeb340);
+box-shadow:0 7px 24px #f7c75b2b;
+font-size:14px;font-weight:900;letter-spacing:.4px;
+}
+.join-btn svg{width:21px;height:21px}
+.note{margin-top:13px;color:#82908a;font-size:10px;letter-spacing:.3px}
+.contact{
+position:fixed;z-index:10;right:12px;bottom:12px;
+display:flex;align-items:center;gap:7px;padding:10px 12px;
+border-radius:12px;border:1px solid #ffffff25;
+background:#10181ef2;box-shadow:0 5px 25px #0006;
+color:#fff;text-decoration:none;font-size:10px;font-weight:700;
+backdrop-filter:blur(10px);
+}
+.contact svg{width:18px;height:18px;flex-shrink:0}
+@media(max-height:620px){
+.card{padding:12px 18px}
+.emblem{width:65px;height:65px;margin:8px auto}
+.emblem svg{width:45px;height:45px}
+.subtitle{margin:7px auto 10px}
+.features{margin-bottom:10px}
+.note{margin-top:7px}
+}
+@media(max-width:350px){
+.card{padding:17px 13px}
+.feature{font-size:9px}
+.contact{right:8px;bottom:8px;padding:8px 10px}
+}
+</style>
 </head>
+
 <body>
+<main class="page">
+<div class="glow"></div>
 
-    <!-- Main Card View -->
-    <div class="card-container">
-        <div class="badge">🔴 LIVE MATCH PREDICTIONS</div>
-        
-        <!-- Profile Image -->
-        <div class="profile-box">
-            <img src="https://raw.githubusercontent.com/prediction1134/jamesbhh/76470b24c24b0b4d5805e4ae555ad8c47539a1a5/JAMSSS.jpeg" alt="Cricket Logo">
-        </div>
+<section class="card">
+<div class="top-label"><span class="dot"></span> CRICKET COMMUNITY</div>
 
-        <!-- Channel Name -->
-        <h1 class="channel-name">James Bhai™ (Cricket Analyst)✌️</h1>
-        
-        <p class="subtitle">100% Accurate Toss, Match Report & Fantasy Cricket Tips!</p>
+<div class="emblem">
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" r="44" stroke="#F7C75B" stroke-width="1.5" stroke-dasharray="3 5"/>
+<path d="M50 16L72 27V49C72 65 61 76 50 83C39 76 28 65 28 49V27L50 16Z" stroke="#F7C75B" stroke-width="2.5"/>
+<path d="M36 58L64 30" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+<path d="M39 62L67 34" stroke="#F7C75B" stroke-width="8" stroke-linecap="round"/>
+<path d="M40 55L46 61M47 48L53 54M54 41L60 47" stroke="#18241C" stroke-width="2" stroke-linecap="round"/>
+<path d="M43 68H57" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
 
-        <ul class="features">
-            <li><span>✓</span> Fast Toss & Match Session Updates</li>
-            <li><span>✓</span> Daily IPL & T20 League Tips</li>
-            <li><span>✓</span> Free Winning Fantasy Dream Teams</li>
-        </ul>
+<h1>CRICKET <span>ZONE</span></h1>
 
-        <!-- TELEGRAM CHANNEL JOIN BUTTON -->
-        <a href="https://t.me/+d6IPng5WvdI5MWY1" class="join-btn" onclick="trackLead()" target="_blank">
-            ✈ JOIN TELEGRAM CHANNEL
-        </a>
-    </div>
+<p class="subtitle">
+Your cricket community starts here.
+Join our official Telegram channel for cricket updates and match insights.
+</p>
 
-    <!-- BOTTOM RIGHT CORNER AD SETUP CONTACT -->
-    <div class="ad-contact-corner">
-        <a href="https://t.me/AdDukan1" target="_blank">
-            📢 Ad Setup Contact
-        </a>
-    </div>
+<div class="features">
+<div class="feature"><b>01</b>Cricket Updates</div>
+<div class="feature"><b>02</b>Match Insights</div>
+<div class="feature"><b>03</b>Telegram</div>
+</div>
 
-    <script>
-        function trackLead() {
-            if(typeof fbq !== 'undefined') {
-                fbq('track', 'Lead');
-            }
-        }
-    </script>
+<a class="join-btn"
+href="https://t.me/+24nwQWjb-DIzNzk1"
+target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M21.8 3.3a1.7 1.7 0 0 0-1.8-.3L2.7 9.8c-1.2.5-1.2 1.2-.2 1.6l4.4 1.4 1.7 5.2c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.1-2 4.5 3.3c.8.5 1.4.3 1.6-.8l3-13.8c.2-.8-.1-1.4-.7-1.7ZM8.1 12.5l9.8-6.2c.5-.3.9-.1.5.2l-8.1 7.4-.3 3.5-1.9-4.9Z"/>
+</svg>
+JOIN TELEGRAM CHANNEL
+</a>
+
+<p class="note">YOUR CRICKET COMMUNITY • JOIN TODAY</p>
+</section>
+</main>
+
+<a class="contact"
+href="https://t.me/AdDukan1"
+target="_blank" rel="noopener noreferrer"
+aria-label="Ad Setup Contact on Telegram">
+<svg viewBox="0 0 24 24" fill="#28A8E9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.9 6.9-1.7 8c-.1.6-.5.7-1 .4l-2.8-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-2.8 5.1-4.6c.2-.2-.1-.3-.3-.1l-6.3 4-2.7-.9c-.6-.2-.6-.6.1-.9l10.5-4.1c.5-.2 1 0 .9.8Z"/>
+</svg>
+Ad Setup Contact
+</a>
 </body>
 </html>
